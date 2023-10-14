@@ -11,7 +11,7 @@
         if($count>0){
             $row_data = mysqli_fetch_array($row);
             $_SESSION['dangkyk'] = $row_data['tenkhachhang'];
-            $_SESSION['id_khachhang'] = $row_data['id_cart'];
+            $_SESSION['id_khachhang'] = $row_data['id_dkkhach'];
             header("Location:../index.php");
         }else{
             // header("Location:dangnhap.php");
