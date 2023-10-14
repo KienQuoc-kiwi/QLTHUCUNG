@@ -1,0 +1,319 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    aspect-ratio: auto;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+}
+a {
+    text-decoration: none;
+}
+.wrapper_chitiet{
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+}
+.hinhanh_sanpham{
+    float: left;
+    width: 30%;
+    margin-right: -77px;
+}
+.chitiet_sanpham{
+    float: left;
+    width: 45%;
+    margin: 5px;
+}
+input.themgiohang {
+    border: none;
+    background: burlywood;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* .header{
+    background-image: url(images/bannergoc.jpg);
+    border: 1px solid #ff80ff;
+    height: 180px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 180px;
+    /* background: #ff0080; 
+    
+} */
+
+.menu{
+    
+    border: 1px solid #1aff8c;
+    height: 80px;
+    width: 100%;
+    background: #374259;
+    /* position: fixed; */
+}
+ul.list_menu li{
+    float: left;
+    margin: 9px;
+    padding: 15px;
+}
+ul.list_menu li:hover {
+    background: darkorange;
+}
+ul.list_menu li a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    text-align: center;
+    color: #51dd5a;
+}
+ul.list_menu {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    border: 1px solid #000066;
+    list-style: none;
+    margin: 0 auto;
+    line-height: 24px;
+}
+#main{
+    border: 1px solid #000066;
+    height: auto;
+    width: 100%;
+}
+.sidebar{
+    border: 1px solid #00ff80;
+    height: 390px;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    /* position: fixed; */
+}
+ul.list_sidebar li{
+    margin: 7px;
+    padding: 6px;
+}
+ul.list_sidebar li:hover {
+    background: darkturquoise;
+}
+ul.list_sidebar li a {
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+    display: block;
+}
+ul.list_sidebar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* border: 1px solid #000066; */
+    list-style: none;
+    line-height: 24px;
+}
+.maincontent{
+    /* border: 1px solid #ff0000; */
+    height: auto;
+    width: 78%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+ul.product_list li {
+    width: 18%;
+    border: 1px solid #ddd;
+    margin: 5px;
+    float: left;
+    /* background: #f2f2f2; */
+    height: 300px;
+}
+ul.product_list li a {
+    text-decoration: none;
+}
+ul.product_list li img {
+    width: 100%;
+    height: 150px;
+}
+p.title_product {
+    text-align: center;
+    color: #000;
+    font-size: inherit;
+    font-weight: bold;
+}
+p.price_product {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p.footer_copyright {
+    text-align: center;
+}
+.footer{
+    border: 1px solid #ff1a8c;
+    height: 150px;
+    width: 100%;
+    background: #00cc99;
+}
+
+.clear{
+    clear: both;
+}
+.search{
+    margin: 0px auto;
+    width : 30px
+}
+img{
+    width: 70%;
+    display: block;
+    height: 170px;
+}
+.im img{
+    width: 25%;
+    height: 80px;
+    float: left;
+    margin-left: -300px;
+}
+h3 {
+    margin-left: 9px;
+}
+
+form.timkiem {
+    margin: 12px;
+    float: right;
+}
+
+
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .sidebar {
+        border: 1px solid #00ff80;
+        height: 390px;
+        width: 20%;
+        margin-top: 90px;
+        margin-left: 5px;
+        float: left;
+        /* position: fixed; */
+    }
+    ul.list_menu li {
+        float: left;
+        margin: 11px;
+        padding: 13px;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 78px;
+    }
+    form.timkiem {
+        margin: 12px;
+        float: right;
+        /* padding-left: 0px; */
+        width: 165px;
+    }
+    ul.list_menu li a {
+        font-family: "Montserrat";
+        text-decoration: none;
+        text-align: center;
+        font-size: 9px;
+        color: #51dd5a;
+    }
+    .im img {
+        width: 25%;
+        height: 80px;
+        float: left;
+        margin-left: -160px;
+    }
+    ul.product_list li {
+        width: 18%;
+        border: 1px solid #ddd;
+        margin: 4px;
+        float: left;
+        /* background: #f2f2f2; */
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:46.1875em) {
+    .maincontent {
+        /* border: 1px solid #ff0000; */
+        height: auto;
+        width: 78%;
+        margin-top: -378px;
+        margin-left: 5px;
+        float: right;
+    }
+    ul.product_list li {
+        width: 18%;
+        border: 1px solid #ddd;
+        margin: 8px;
+        float: left;
+        /* background: #f2f2f2; */
+        height: 241px;
+    }
+    p.title_product {
+        text-align: center;
+        color: #000;
+        font-size: inherit;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    p.price_product {
+        text-align: center;
+        color: red;
+        font-size: 7px;
+        font-weight: bold;
+    }
+    ul.product_list li img {
+        width: 100%;
+        height: 102px;
+    }
+    ul.list_menu li a {
+        font-family: "Montserrat";
+        text-decoration: none;
+        text-align: center;
+        color: #51dd5a;
+        font-size: 5px;
+    }
+    ul.list_menu li {
+        float: left;
+        margin: -14px;
+        padding: 15px;
+        width: 50px;
+    }
+    .menu {
+        border: 1px solid #1aff8c;
+        height: 49px;
+        width: 100%;
+        background: #374259;
+        /* position: fixed; */
+    }
+    .im img {
+        width: 25%;
+        height: 80px;
+        float: left;
+        margin-left: -64px;
+        margin-top: -22px;
+    }
+    input[type="text"] {
+        width: 49px;
+        height: 8px;
+        font-size: 5px;
+    }
+    input[type="submit"] {
+        font-size: 7px;
+    }
+    form.timkiem {
+        margin: -8px;
+        float: right;
+        width: 111px;
+    }
+}
