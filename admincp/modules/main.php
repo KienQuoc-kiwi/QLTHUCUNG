@@ -24,7 +24,9 @@
                      include("modules/quanlydonhang/lietke.php");
                 }elseif($tam=='donhang' && $query=='xemdonhang'){
                     include("modules/quanlydonhang/xemdonhang.php");
-               }
+               }elseif($tam=='quanlynhanvien' && $query=='lietke'){
+                    include("modules/quanlynhanvien/quanlynv.php");
+                }
                 else{
                     include("dashboard.php");                
                 }
