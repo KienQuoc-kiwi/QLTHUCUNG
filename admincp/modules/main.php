@@ -26,6 +26,9 @@
                     include("modules/quanlydonhang/xemdonhang.php");
                }elseif($tam=='quanlynhanvien' && $query=='lietke'){
                     include("modules/quanlynhanvien/quanlynv.php");
+                    include("modules/quanlynhanvien/themnv.php");
+                }elseif($tam=='quanlynhanvien' && $query=='sua'){
+                    include("modules/quanlynhanvien/suanv.php");
                 }
                 else{
                     include("dashboard.php");                

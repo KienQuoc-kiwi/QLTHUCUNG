@@ -23,11 +23,10 @@
         <td><?php echo $row['Gioitinh'] ?></td>
         <td><?php echo $row['Diachi'] ?></td>
         <td><?php echo $row['sdt'] ?></td>
-        <td><a href="modules/quanlynhanvien/themnv.php">thêm</a> | 
-        
+        <td>
+            <a href="modules/quanlynhanvien/xuly.php?Manv=<?php echo $row['Manv'] ?>">Xóa</a> | <a href="
+            ?action=quanlynhanvien&query=sua&Manv=<?php echo $row['Manv'] ?>">Sửa</a>
         </td>
-        
-            
     </tr>
     <?php
         }
