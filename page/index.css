@@ -32,12 +32,20 @@ a {
     margin: 5px;
 }
 
+input.themgiohang {
+    border: none;
+    background: burlywood;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .comment {
     padding: 23px;
+    padding-top: 1px;
+    margin-left: -30px;
     position: relative;
     padding-bottom: 20px;
-    border: 1px solid #e5e5e5;
-    border-radius: 12px;
 }
 
 textarea.content {
@@ -48,15 +56,9 @@ textarea.content {
     padding: 10px;
     resize: none;
     width: 100%;
+    border-radius: 5px;
 }
 
-input.themgiohang {
-    border: none;
-    background: burlywood;
-    padding: 12px;
-    font-size: 15px;
-    cursor: pointer;
-}
 /* .header{
     background-image: url(images/bannergoc.jpg);
     border: 1px solid #ff80ff;
