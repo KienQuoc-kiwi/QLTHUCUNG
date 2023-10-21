@@ -19,7 +19,13 @@
         <p><input  class="themgiohang" name = "themgiohang" type="submit" value="Thêm giỏ hàng"></p>
     </div>
     </form>
+    <form action="form_rate">
+    <div class="comment">
+        <textarea class="content" name="content" placeholder="Mời bạn chia sẻ cảm nhận"></textarea>
    </div>
+    </form>
+   </div>
+   
 <?php
    }
    ?>
