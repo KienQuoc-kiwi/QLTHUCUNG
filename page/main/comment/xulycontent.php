@@ -1,5 +1,7 @@
 <?php
     include("../../../admincp/config/config.php");
+    date_default_timezone_set("Asia/Ho_Chi_Minh");
+    $ngay = time();
 
     $id_khachhang = $_POST['id_khachhang'];
     $id_sp = $_POST['id_sanpham'];

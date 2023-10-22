@@ -19,18 +19,17 @@
             <p><input  class="themgiohang" name = "themgiohang" type="submit" value="Thêm giỏ hàng"></p>
         </div>
     </form>
+    <form method = "POST" action="main/comtent/lietkecontent.php?id_sanpham=<?php echo $row_chitiet['id_sanpham']?>">
+        <div class="comment">
+            <tr>
+                <textarea class="content" name="content" placeholder="Mời bạn chia sẻ cảm nhận"></textarea>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="thembinhluan" value="Gửi bình luận"></td>
+            </tr>
+        </div>
+    </form>
    </div>
-   
 <?php
    }
    ?>
-   <form method="POST">
-                <div class="comment">
-                    <tr>
-                    <textarea class="content" name="content" placeholder="Mời bạn chia sẻ cảm nhận"></textarea>
-                    </tr>
-                    <tr>
-                    <td colspan="2"><input type="submit" name="thembinhluan" value="Gửi bình luận"></td>
-                    </tr>
-                </div>
-            </form>
