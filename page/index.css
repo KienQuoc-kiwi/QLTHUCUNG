@@ -215,6 +215,14 @@ form.timkiem {
     float: right;
 }
 
+.product_rating_main {
+    border-radius: 2px;
+    border: 1px solid #f9ede5;
+    padding: 1.875rem;
+    min-height: 5rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
 
 @media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     .sidebar {

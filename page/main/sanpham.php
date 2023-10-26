@@ -19,17 +19,39 @@
             <p><input  class="themgiohang" name = "themgiohang" type="submit" value="Thêm giỏ hàng"></p>
         </div>
     </form>
-    <form method = "POST" action="main/comtent/lietkecontent.php?id_sanpham=<?php echo $row_chitiet['id_sanpham']?>">
-        <div class="comment">
+    
+   </div>
+<?php
+   }
+   $sql_lietke_content = "SELECT tenkhachhang, binhluan.id_khachhang, sanpham.id_sanpham, binhluan.noidung, ngaybinhluan FROM binhluan,dangkykhach,sanpham WHERE 
+    binhluan.id_khachhang = dangkykhach.id_dkkhach AND sanpham.id_sanpham = binhluan.id_sanpham AND sanpham.id_sanpham = '$_GET[id]'";
+    $query_lietke_content = mysqli_query($mysqli,$sql_lietke_content);
+   ?>
+   <form  method="POST" action="main/comment/xulycontent.php">
+            <tr>
+                <input type="hidden" name="id_sanpham_test" value="<?=$_GET['id']?>">
+            </tr>
+            <!-- <input type="hidden" name="noidung" value="<?=$row['noidung']?>">
+            <input type="hidden" name="ngaybl" value="<?=$row['ngaybinhluan'] ?>"> -->
             <tr>
                 <textarea class="content" name="content" placeholder="Mời bạn chia sẻ cảm nhận"></textarea>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" name="thembinhluan" value="Gửi bình luận"></td>
             </tr>
-        </div>
+            <h3>Liệt kê bình luận</h3>
     </form>
-   </div>
-<?php
-   }
-   ?>
+    <?php
+        $i = 0;
+        while($row = mysqli_fetch_array($query_lietke_content)){
+            $i++;
+    ?>
+    <div class="product_rating_main">
+        <a class="product_rating_name" href=""><?php echo $row['tenkhachhang']?><?php echo $row['id_khachhang']?></a>
+        <div class="product_rating_time" style="margin-top: 0.75rem;"><td><?php echo $row['ngaybinhluan']?></td> </div>
+        <div class="product_rating_content" style="margin-top: 0.75rem;"><td><?php echo $row['noidung'] ?></td></div>
+    </div>
+    <?php
+        }
+    ?>
+

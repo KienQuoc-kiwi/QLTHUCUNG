@@ -30,6 +30,10 @@
                 }elseif($tam=='quanlynhanvien' && $query=='sua'){
                     include("modules/quanlynhanvien/suanv.php");
                 }
+                elseif($tam=='quanlybinhluan' && $query=='lietke'){
+                    include("../../page/main/comment/lietkecontent.php");
+                    include("../../page/main/comment/xulycontent.php");
+                }
                 else{
                     include("dashboard.php");                
                 }

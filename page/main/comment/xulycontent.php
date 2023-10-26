@@ -1,17 +1,28 @@
 <?php
+    session_start();
     include("../../../admincp/config/config.php");
     date_default_timezone_set("Asia/Ho_Chi_Minh");
-    $ngay = time();
-
-    $id_khachhang = $_POST['id_khachhang'];
-    $id_sp = $_POST['id_sanpham'];
-    $binhluan = $_POST['noidung'];
-    $ngay = $_POST['ngaybinhluan'];
-
+    $ngay = date("H:i:s d-m-Y",time());
+    $idkhachhang = $_SESSION['id_khachhang'];
+    $id_sp = $_POST['id_sanpham_test'];
+    $binhluan = $_POST['content'];
+     
+    //echo '<script type ="text/JavaScript">alert("id khach: '.$idkhachhang.'")</script>'; 
+    // echo '<script type ="text/JavaScript">alert("id san pham: '.$id_sp.'")</script>';
+    // echo '<script type ="text/JavaScript">alert("noi dung: '.$binhluan.'")</script>';
+    // echo '<script type ="text/JavaScript">alert("ngay binh luan: '.$ngay.'")</script>';
     if(isset($_POST['thembinhluan'])){
-        //them
-        $sql_them = "INSERT INTO binhluan(id_khachhang, id_sanpham, noidung, ngaybinhluan) VALUE('".$id_khachhang."','".$id_sp."',
-        '".$binhluan."','".$ngay."')";
-        mysqli_query($mysqli,$sql_them);
+        if(empty($binhluan)){
+            //echo '<script type ="text/JavaScript">alert("Vui lòng nhập bình luận!")</script>';
+            header("Location:../../index.php?quanly=sanpham&id=".$id_sp);
+        }else{
+            $sql_them = "INSERT INTO binhluan(id_khachhang, id_sanpham, noidung, ngaybinhluan) VALUES('".$idkhachhang."','".$id_sp."',
+            '".$binhluan."','".$ngay."')";
+            mysqli_query($mysqli,$sql_them);
+            $id = $_GET['id_sanpham'];
+            header("Location:../../index.php?quanly=sanpham&id=".$id_sp);
+        }
+        
     }
+    
 ?>

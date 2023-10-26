@@ -50,7 +50,11 @@
                 }
                 elseif($tam=='thanhtoan'){ 
                     include("main/thanhtoan.php");
-                }else{
+                }
+                elseif($tam=='quanlybinhluan'){ 
+                    include("main/comment/lietkecontent.php");
+                }
+                else{
                     include("main/main.php");
                 }
                 ?>
